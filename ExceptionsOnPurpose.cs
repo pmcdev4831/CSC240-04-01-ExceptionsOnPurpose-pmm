@@ -16,13 +16,16 @@ namespace CSC240_04_01_ExceptionsOnPurpose_pmm
             // STORAGE
             int answer;
             int result;
-            int zero = 0;                  
-            
-            // Input
-            Write("Enter an integer >> ");
-            answer = Convert.ToInt32(ReadLine());
-            // Process
-            result = answer / zero;
+            int zero = 0;
+
+            try
+            {
+                // Input
+                Write("Enter an integer >> ");
+                answer = Convert.ToInt32(ReadLine());
+                // Process
+                result = answer / zero;
+            }
             // Output
             WriteLine("The answer is " + answer);
         }
