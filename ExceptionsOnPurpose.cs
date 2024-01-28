@@ -26,6 +26,10 @@ namespace CSC240_04_01_ExceptionsOnPurpose_pmm
                 // Process
                 result = answer / zero;
             }
+            catch (Exception e) 
+            {
+                WriteLine(e.Message); 
+            }
             // Output
             WriteLine("The answer is " + answer);
         }
