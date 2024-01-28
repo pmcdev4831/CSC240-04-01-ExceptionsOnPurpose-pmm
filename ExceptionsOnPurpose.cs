@@ -14,7 +14,7 @@ namespace CSC240_04_01_ExceptionsOnPurpose_pmm
         static void Main(string[] args)
         {
             // STORAGE
-            int answer;
+            int answer = 0;
             int result;
             int zero = 0;
 
@@ -32,6 +32,7 @@ namespace CSC240_04_01_ExceptionsOnPurpose_pmm
             }
             // Output
             WriteLine("The answer is " + answer);
+            ReadLine();
         }
     }
 }
