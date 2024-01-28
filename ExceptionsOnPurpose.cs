@@ -26,9 +26,15 @@ namespace CSC240_04_01_ExceptionsOnPurpose_pmm
                 // Process
                 result = answer / zero;
             }
-            catch (Exception e) 
+            catch (FormatException e) 
             {
-                WriteLine(e.Message); 
+                WriteLine("You did not enter an integer"); 
+            }
+            catch (DivideByZeroException e)             
+            {
+                WriteLine("This is not your fault.");
+                WriteLine("You entered the interger correctly.");
+                WriteLine("The program divides by zero.");
             }
             // Output
             WriteLine("The answer is " + answer);
